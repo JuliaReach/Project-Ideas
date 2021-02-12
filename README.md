@@ -1,4 +1,4 @@
-# Project Ides: Contributing to the JuliaReach ecosystem
+# Project Ideas: Contributing to the JuliaReach ecosystem
 
 ## JSoC
 
