@@ -1,4 +1,4 @@
-# :bulb: :notebook: Project Ideas: Contributing to the JuliaReach ecosystem roadmap
+# :bulb: :notebook: Project Ideas: Contributing to JuliaReach
 
 ## :fast_forward: Distributed and GPU Verification of Semi-Discrete PDEs
 
