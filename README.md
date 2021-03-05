@@ -4,7 +4,7 @@
 
 **Description.** This project aims at pushing the frontier of reachability methods for the class of semi-discrete linear PDEs by use of distributed high-performance computing and GPU computing (the candidate will pick one of those two approaches). Problems considered fall into the category of linearized PDEs from the domain of structural mechanics [1], which, under spatial discretization using the finite-element method ([FEM](https://en.wikipedia.org/wiki/Finite_element_method)), are transformed into a system of second-order (or first-order) linear ODEs typically of the form `Mx''(t) + Kx'(t) + Cx(t) = F(t)` where both `x(0)` and `F(t)` are specified in terms of sets. Note that for a system with `n` degrees of freedom and a box of initial conditions, `2^n` trajectories are required to simulate all possible behaviors only in the vertices. Such approach is intractable if `n` is large. We take a different, set-based approach: solve the dynamical system using the *sets* given in the initial problem formulation, instead of computing individual trajectories.
 
-**Expected Results.** We aim at handling problems with ~10,000 mesh nodes with uncertain initial conditions, subject to external forces that are uncertain but constant over time, or uncertain but piecewise-constant. The flowpipe computation should be done in *dense time*, i.e. the result should cover *all possible behaviors* for any time point in the time span of interest (and it does not rely on interpolation), for any initial condition and any function that satisfies the constraints.
+**Expected Results.** We aim at handling problems with ~10,000 mesh nodes with uncertain initial conditions, subject to external forces that are uncertain but constant over time, or uncertain but piecewise-constant. The computation will be done in *dense time*, i.e. the result should cover *all possible behaviors* for any time point in the time span of interest (the reach-sets are associated to time intervals hence no behavior escapes the flowpipe), for any initial condition and any function that satisfies the constraints.
 
 **Recommended Skills.** Familiarity with `LazySets.jl` is a must. Knowledge of zonotope based [2] and support function based [3] algorithms from the literature would be ideal, see [4] for a general review, but in this project we will only consider linear systems. Basic knowledge about distributed and GPU computing is required, as we will build on existing infrastructure, e.g. [JuliaGPU](https://juliagpu.org/).
 
@@ -12,7 +12,7 @@
 
 - Implement `GLGM06` (zonotopes) on the GPU. The variations with and without order reduction should be considered.
 
-- Implement the `BOX` algorithm (box overapproximation but without wrapping) on the GPU. Distribute computations using the property that the reach-set at index k can be found directly by diagonalizing the state transition matrix Phi^k, each processor computing an independent sub-sequence [X0, X1, ..., Xk1], [Xk2, ...]. 
+- Implement the `BOX` algorithm (propagation of boxes, without wrapping effect) on the GPU. Distributed computations may use the property that the reach-set at index k can be found directly by diagonalizing the state transition matrix Phi^k, each processor computing an independent sub-sequence [X0, X1, ..., Xk1], [Xk2, ...]. 
 
 - Example benchmark problems are:
 
