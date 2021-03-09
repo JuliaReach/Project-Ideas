@@ -22,7 +22,7 @@
 
 For related work see the tool XSpeed [7].
 
-**Mentors.** The results will be integrated into an active line of reseacrh between Professors [Marcelo Forets](https://github.com/mforets) (Depto. de Matemática y Aplicaciones, Centro Universitario Regional del Este, UdelaR, Uruguay), [Daniel Freire Caporale](https://github.com/dfcaporale) (Instituto de Física, Facultad de Ciencias, UdelaR, Uruguay) and [Jorge Pérez Zerpa](https://github.com/jorgepz) (Instituto de Estructuras y Transporte, Facultad de Ingeniería, UdelaR).
+**Mentors.** The results will be integrated into an active line of research between Professors [Marcelo Forets](https://github.com/mforets) (Depto. de Matemática y Aplicaciones, Centro Universitario Regional del Este, UdelaR, Uruguay), [Daniel Freire Caporale](https://github.com/dfcaporale) (Instituto de Física, Facultad de Ciencias, UdelaR, Uruguay) and [Jorge Pérez Zerpa](https://github.com/jorgepz) (Instituto de Estructuras y Transporte, Facultad de Ingeniería, UdelaR).
 
 **References:**
 
