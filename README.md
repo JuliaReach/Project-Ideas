@@ -26,6 +26,9 @@ For related work see the tool XSpeed [7].
 
 **References:**
 
+<details>
+    <summary> Click to see the list of references. </summary>
+
 - [1] Bathe, Klaus-Jürgen. Finite element procedures. Klaus-Jurgen Bathe, 2006.
 
 - [2] Girard, A., Le Guernic, C., & Maler, O. (2006, March). Efficient computation of reachable sets of linear time-invariant systems with inputs. In International Workshop on Hybrid Systems: Computation and Control (pp. 257-271). Springer, Berlin, Heidelberg.
@@ -39,6 +42,8 @@ For related work see the tool XSpeed [7].
 - [6] Tahersima, Mohammad, and Paul Tikalsky. "Finite element modeling of hydration heat in a concrete slab-on-grade floor with limestone blended cement." Construction and Building Materials 154 (2017): 44-50.
 
 - [7] Ray, R., Gurung, A., Das, B., Bartocci, E., Bogomolov, S., & Grosu, R. (2015, November). XSpeed: Accelerating reachability analysis on multi-core processors. In Haifa Verification Conference (pp. 3-18). Springer, Cham.
+    
+</details>
 
 ## :money_mouth_face: Programs with external funding
 
