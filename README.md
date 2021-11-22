@@ -9,6 +9,33 @@ If you have a record of contributions to the JuliaReach ecosystem, it is possibl
 
 For additional information see https://julialang.org/jsoc/
 
+## Nonlinear reachability using state-space abstractions
+
+**Description.** Computation of reachable 
+
+- https://arxiv.org/abs/2006.12091
+
+## Reachability for differential-algebraic equation systems
+
+- https://mediatum.ub.tum.de/doc/1281529/770926.pdf
+
+## Fast global optimizer using tensor for Bernstein expansions
+
+- bounds
+- bounding functions
+- cf Kodia
+- see refs
+
+- [1] Smith, A. P. Fast construction of constant bound functions for sparse polynomials. Journal of Global Optimization 43.2 (2009): 445-458.
+
+- [2] Smith, A. P. Enclosure methods for systems of polynomial equations and inequalities. Doctoral dissertation, Universität Konstanz (2012).
+
+- [3] Titi, J., & Garloff, J. (2017). Fast determination of the tensorial and simplicial Bernstein forms of multivariate polynomials and rational functions. Konstanzer Schriften in Mathematik; 361.
+
+## Enhance symbolic-numeric set computations in low dimensions
+
+LazySets
+
 ## GPU-accelerated reachability for structural mechanics
 
 **Description.** This project aims at pushing the frontier of reachability methods for the class of semi-discrete linear PDEs by use of distributed high-performance computing and GPU computing (the candidate will pick one of those two approaches). Problems considered fall into the category of linearized PDEs from the domain of structural mechanics [1], which, under spatial discretization using the finite-element method ([FEM](https://en.wikipedia.org/wiki/Finite_element_method)), are transformed into a system of second-order (or first-order) linear ODEs typically of the form `Mx''(t) + Kx'(t) + Cx(t) = F(t)` where both `x(0)` and `F(t)` are specified in terms of sets. Note that for a system with `n` degrees of freedom and a box of initial conditions, `2^n` trajectories are required to simulate all possible behaviors only in the vertices. Such approach is intractable if `n` is large. We take a different, set-based approach: solve the dynamical system using the *sets* given in the initial problem formulation, instead of computing individual trajectories.
