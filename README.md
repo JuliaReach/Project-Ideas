@@ -13,7 +13,7 @@ For additional information see https://julialang.org/jsoc/
 
 **Description.** Computation of reachable 
 
-- https://arxiv.org/abs/2006.12091
+- https://mediatum.ub.tum.de/doc/1615814/gwj94isxrct41uqcp7bxo3wat.pdf
 
 ## Reachability for differential-algebraic equation systems
 
