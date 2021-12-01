@@ -35,7 +35,7 @@ For additional information see https://julialang.org/jsoc/
 
 ## Reachability analysis with sparse polynomial zonotopes in JuliaReach
 
-**Description.** Sparse polynomial zonotopes are a new non-convex set representation that are well-suited for reachability analysis of nonlinear dynamical systems. The task is to add efficient Julia implementations of 1) sparse polynomial zonotopes in [LazySets](https://github.com/JuliaReach/LazySets.jl), 2) the corresponding reachability algorithm for dynamical systems in [ReachabilityAnalysis](https://github.com/JuliaReach/ReachabilityAnalysis.jl), and an integration of the new algorithm for neural-network control systems in 3) [NeuralNetworkAnalysis](https://github.com/JuliaReach/NeuralNetworkAnalysis.jl).
+**Description.** Sparse polynomial zonotopes are a new non-convex set representation that are well-suited for reachability analysis of nonlinear dynamical systems. The task is to add efficient Julia implementations of 1) sparse polynomial zonotopes in [LazySets](https://github.com/JuliaReach/LazySets.jl), 2) the corresponding reachability algorithm for dynamical systems in [ReachabilityAnalysis](https://github.com/JuliaReach/ReachabilityAnalysis.jl), and 3) an integration of the new algorithm for neural-network control systems in [NeuralNetworkAnalysis](https://github.com/JuliaReach/NeuralNetworkAnalysis.jl).
 
 **Expected Results.** The goal is to efficiently implement sparse polynomial zonotopes and the corresponding reachability algorithms. The code is to be documented, tested, and evaluated extensively in benchmarks.
 
