@@ -32,9 +32,16 @@ For additional information see https://julialang.org/jsoc/
 
 - [3] Titi, J., & Garloff, J. (2017). Fast determination of the tensorial and simplicial Bernstein forms of multivariate polynomials and rational functions. Konstanzer Schriften in Mathematik; 361.
 
-## Enhance symbolic-numeric set computations in low dimensions
+## Efficient two-dimensional geometric operations in LazySets
 
-LazySets
+**Summary.** Implement efficient functionality for geometry in the plane (two dimensions) in the Julia library [LazySets](https://github.com/JuliaReach/LazySets.jl).
+
+**Motivation.** [LazySets](https://github.com/JuliaReach/LazySets.jl) is a Julia library for computing with geometric sets. The focus is on lazy set representations and efficient high-dimensional processing. Still, two-dimensional sets are prevalent and there are efficient implementations for various types of two-dimensional sets. Many functions, however, assume general sets and cannot apply tricks known for two-dimensional geometry. For example, there is a vast body of literature on efficient polygon algorithms. In this project we are not restricted to polygons, and we want to support lazy operations as well.
+
+**Goal.** The goal is to implement efficient algorithms for two-dimensional sets from the literature.
+
+**Related packages.** [JuliaGeometry](https://github.com/JuliaGeometry) has several relevant packages, but only a few relevant functions for basic set types. In this project we aim to add more functionality for more general set types.
+
 
 ## GPU-accelerated reachability for structural mechanics
 
@@ -42,7 +49,7 @@ LazySets
 
 **Expected Results.** We aim at handling problems with ~10,000 mesh nodes with uncertain initial conditions, subject to external forces that are uncertain but constant over time, or uncertain but piecewise-constant. The computation will be done in *dense time*, i.e. the result should cover *all possible behaviors* for any time point in the time span of interest (the reach-sets are associated to time intervals hence no behavior escapes the flowpipe), for any initial condition and any function that satisfies the constraints.
 
-**Recommended Skills.** Familiarity with `LazySets.jl` is a must. Knowledge of zonotope based [2] and support function based [3] algorithms from the literature would be ideal, see [4] for a general review, but in this project we will only consider linear systems. Basic knowledge about distributed and GPU computing is required, as we will build on existing infrastructure, e.g. [JuliaGPU](https://juliagpu.org/).
+**Recommended Skills.** Familiarity with [LazySets](https://github.com/JuliaReach/LazySets.jl) is a must. Knowledge of zonotope based [2] and support function based [3] algorithms from the literature would be ideal, see [4] for a general review, but in this project we will only consider linear systems. Basic knowledge about distributed and GPU computing is required, as we will build on existing infrastructure, e.g. [JuliaGPU](https://juliagpu.org/).
 
 **Example tasks:**
 
