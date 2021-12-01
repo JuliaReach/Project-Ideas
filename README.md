@@ -39,6 +39,8 @@ For additional information see https://julialang.org/jsoc/
 
 **Expected Results.** The goal is to efficiently implement sparse polynomial zonotopes and the corresponding reachability algorithms. The code is to be documented, tested, and evaluated extensively in benchmarks.
 
+**Recommended Skills.** Familiarity with Julia and Git/GitHub is mandatory. Familiarity with the mentioned Julia packages is appreciated but not required. The project does not require theoretical contributions, but it requires reading a research article (see below); hence a certain level of academic experience is recommended.
+
 **Literature and related package.** The relevant theory is described in [this research article](https://arxiv.org/pdf/1901.01780). There exists a Matlab implementation in [CORA](https://tumcps.github.io/CORA/) (the implementation of polynomial zonotopes can be found in [this folder](https://github.com/TUMcps/CORA/tree/master/contSet/%40polyZonotope)).
 
 
